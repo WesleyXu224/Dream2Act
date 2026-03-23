@@ -3,36 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="CLAIMS: Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control.">
-  <meta name="keywords" content="CLAIMS, Humanoid Control, Motion Synthesis, Reinforcement Learning, CVPR 2026">
+        content="Dream2Act: Morphology-Consistent Humanoid Interaction through Robot-Centric Video Synthesis.">
+  <meta name="keywords" content="Dream2Act, Humanoid Interaction, Video Synthesis, Zero-Shot, Robotics">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CLAIMS: Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control</title>
+  <title>Dream2Act: Morphology-Consistent Humanoid Interaction through Robot-Centric Video Synthesis</title>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
-
     gtag('js', new Date());
-
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-weight=%22bold%22 font-family=%22Arial,sans-serif%22 fill=%22%23363636%22>C</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-weight=%22bold%22 font-family=%22Arial,sans-serif%22 fill=%22%23363636%22>D</text></svg>">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -60,53 +53,40 @@
   </div>
 </nav>
 
-
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control</h1>
+          <h1 class="title is-1 publication-title">Dream2Act: Morphology-Consistent Humanoid Interaction through Robot-Centric Video Synthesis</h1>
           
           <div class="is-size-4 publication-authors" style="margin-bottom: 10px;">
-            <span class="author-block">CVPR 2026</span>
+            <span class="author-block">ArXiv 2026</span>
           </div>
 
-<div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://wesleyxu224.github.io">Weisheng Xu</a><sup>1*</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://nathanwu7.github.io/">Qiwei Wu</a><sup>1*</sup>,
-            </span>
-            <span class="author-block">
-              Jiaxi Zhang<sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://colin-jing.github.io/">Jing Tan</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              Yangfan Li<sup>1</sup>,
-            </span>
-            <span class="author-block">
-              Yuetong Fang<sup>1</sup>,
-            </span>
-            <span class="author-block">
-              Jiaqi Xiong<sup>2</sup>,
-            </span>
-            <span class="author-block">
-              Kai Wu<sup>1</sup>,
-            </span>
-            <span class="author-block">
-              Rong Ou<sup>1</sup>,
-            </span>
-            <span class="author-block">
-              Renjing Xu<sup>1&dagger;</sup>
-            </span>
-          </div>
           <div class="is-size-5 publication-authors">
+            <span class="author-block"><a href="https://wesleyxu224.github.io">Weisheng Xu</a><sup>1*</sup>,</span>
+            <span class="author-block">Jian Li<sup>1*</sup>,</span>
+            <span class="author-block">Shuyi Lin<sup>3</sup>,</span>
+            <span class="author-block">Mingqian Zhou<sup>1</sup>,</span>
+            <span class="author-block">Taowen Wang<sup>1</sup>,</span>
+            <span class="author-block">Jiawen Wen<sup>1</sup>,</span>
+            <span class="author-block">Yi Gu<sup>1</sup>,</span>
+            <span class="author-block">Bin Yang<sup>1</sup>,</span>
+            <br>
+            <span class="author-block">Haodong Chen<sup>2</sup>,</span>
+            <span class="author-block">Jing Tan<sup>1</sup>,</span>
+            <span class="author-block">Qiwei Wu<sup>1</sup>,</span>
+            <span class="author-block">Xiangrui Jiang<sup>1</sup>,</span>
+            <span class="author-block">Qiwei Liang<sup>1</sup>,</span>
+            <span class="author-block">Jiaxi Zhang<sup>1</sup>,</span>
+            <span class="author-block">Renjing Xu<sup>1&dagger;</sup></span>
+          </div>
+          
+          <div class="is-size-5 publication-authors" style="margin-top: 10px;">
             <span class="author-block"><sup>1</sup>Hong Kong University of Science and Technology (Guangzhou),</span>
-            <span class="author-block"><sup>2</sup>University of Oxford</span>
+            <span class="author-block"><sup>2</sup>Harbin Institute of Technology, Shenzhen,</span><br>
+            <span class="author-block"><sup>3</sup>Shenzhen University / University of Cambridge</span>
           </div>
           
           <div class="is-size-6 publication-authors" style="margin-top: 5px; font-style: italic;">
@@ -117,52 +97,27 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="./static/pdfs/CVPR26_CLAIMS.pdf"
+                <a href="https://arxiv.org/pdf/2603.19709v1"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="./static/pdfs/CVPR26_CLAIMS_Supplementary.pdf"
+                <a href="https://arxiv.org/abs/2603.19709"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Supp</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2602.21599"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video (Coming Soon)</span>
-                </a>
-              </span> -->
               <span class="link-block">
                 <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
+                  <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code (Coming Soon)</span>
                   </a>
               </span>
             </div>
-
           </div>
         </div>
       </div>
@@ -173,13 +128,14 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/pipeline.png" alt="CLAIMS Pipeline" style="width:100%;">
+      <img src="./static/images/pipeline.png" alt="Dream2Act Pipeline" style="width:100%;">
       <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
-        <span class="dnerf">CLAIMS</span> is a closed-loop automated framework that co-evolves motion data synthesis and controllers, scaling the capabilities of physics-based humanoid control.
+        <span class="dnerf">Dream2Act</span> is a robot-centric framework that enables zero-shot interaction through generative video synthesis, bypassing the morphology gap of human-centric retargeting.
       </h2>
     </div>
   </div>
 </section>
+
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -187,135 +143,154 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Physics-based humanoid control relies on training with motion datasets that have diverse data distributions. However, the fixed difficulty distribution of datasets limits the performance ceiling of the trained control policies. Additionally, the method of acquiring high-quality data through professional motion capture systems is constrained by costs, making it difficult to achieve large-scale scalability.
+            Equipping humanoid robots with versatile interaction skills typically requires either extensive task-specific policy training or explicit human-to-robot motion retargeting. However, learning-based policies are hindered by prohibitive data collection costs, limiting their scalability. Meanwhile, retargeting paradigms rely heavily on human-centric pose estimation (e.g., SMPL), which inevitably introduces the <strong>morphology gap</strong>. Such skeletal scale mismatches result in severe spatial misalignments when mapped to robots, compromising interaction success.
           </p>
           <p>
-            To address these issues, we propose a closed-loop automated motion data generation and iterative framework, <strong>CLAIMS</strong>. It can generate high-quality motion data with rich action semantics, including martial arts, dance, combat, sports, gymnastics, and more.
+            In this work, we propose <strong>Dream2Act</strong>, a robot-centric framework that enables zero-shot interaction through generative video synthesis. Given an image of the predefined robot and target object in third-person view, our framework leverages video generation models to envision videos in which the physical robot completes the task with spatially aligned, morphology-consistent motion.
           </p>
           <p>
-            Furthermore, our framework enables difficulty iteration of policies and data through physical metrics and objective evaluations, allowing the trained tracker to break through its original difficulty limits. On the PHC single-primitive tracker, using only approximately 1/10 of the AMASS dataset size, the average failure rate on the test set (2201 clips) is reduced by 45% compared to the baseline.
+            We evaluate Dream2Act on the Unitree G1 across four categories of whole-body mobile interaction tasks. Dream2Act achieves an overall task success rate of 37.5%, compared to 0% for conventional retargeting pipelines, maintaining robot-consistent spatial alignment throughout execution and enabling reliable contact formation.
           </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">1. Evolution of Tracking Capability on Dynamic Kicks</h2>
-    <p class="has-text-centered" style="margin-bottom: 20px;">Comparing tracking performance of different training loops (L0, L3, L6) across escalating difficulty levels.</p>
-    
-    <h3 class="title is-5">Difficulty Level: L0 Kick</h3>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L0_kick/L0_kick.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L0_kick/L0_kick.mp4" type="video/mp4"></video><p>Reference Motion</p></div>
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L0_kick/L0_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L0_kick/L0_tracker.mp4" type="video/mp4"></video><p class="has-text-danger">L0 Tracker</p></div>
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L0_kick/L3_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L0_kick/L3_tracker.mp4" type="video/mp4"></video><p class="has-text-warning">L3 Tracker</p></div>
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L0_kick/L6_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L0_kick/L6_tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>L6 Tracker (Ours)</strong></p></div>
-    </div>
-
-    <h3 class="title is-5">Difficulty Level: L3 Kick</h3>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L3_kick/L3_kick.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L3_kick/L3_kick.mp4" type="video/mp4"></video><p>Reference Motion</p></div>
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L3_kick/L0_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L3_kick/L0_tracker.mp4" type="video/mp4"></video><p class="has-text-danger">L0 Tracker</p></div>
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L3_kick/L3_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L3_kick/L3_tracker.mp4" type="video/mp4"></video><p class="has-text-warning">L3 Tracker</p></div>
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L3_kick/L6_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L3_kick/L6_tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>L6 Tracker (Ours)</strong></p></div>
-    </div>
-
-    <h3 class="title is-5">Difficulty Level: L6 Kick</h3>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L6_kick/L6_kick.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L6_kick/L6_kick.mp4" type="video/mp4"></video><p>Reference Motion</p></div>
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L6_kick/L0_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L6_kick/L0_tracker.mp4" type="video/mp4"></video><p class="has-text-danger">L0 Tracker</p></div>
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L6_kick/L3_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L6_kick/L3_tracker.mp4" type="video/mp4"></video><p class="has-text-warning">L3 Tracker</p></div>
-      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L6_kick/L6_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L6_kick/L6_tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>L6 Tracker (Ours)</strong></p></div>
     </div>
   </div>
 </section>
 
 <section class="section has-background-light">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">2. Generalization to Extreme OOD Maneuvers</h2>
-    <p class="has-text-centered" style="margin-bottom: 20px;">Comparing our final L6 Tracker with the PHC baseline on out-of-distribution dynamic motions.</p>
-
-    <div class="columns is-multiline is-centered has-text-centered">
-      <div class="column is-12"><h3 class="title is-5">OOD Motion 1</h3></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion1/ood_motion1.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion1/ood_motion1.mp4" type="video/mp4"></video><p>Reference</p></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion1/PHC_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion1/PHC_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">PHC Tracker</p></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion1/L6_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion1/L6_Tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>Ours (L6)</strong></p></div>
-
-      <div class="column is-12"><hr><h3 class="title is-5">OOD Motion 2</h3></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion2/ood_motion2.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion2/ood_motion2.mp4" type="video/mp4"></video><p>Reference</p></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion2/PHC_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion2/PHC_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">PHC Tracker</p></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion2/L6_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion2/L6_Tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>Ours (L6)</strong></p></div>
-
-      <div class="column is-12"><hr><h3 class="title is-5">OOD Motion 3</h3></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion3/ood_motion3.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion3/ood_motion3.mp4" type="video/mp4"></video><p>Reference</p></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion3/PHC_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion3/PHC_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">PHC Tracker</p></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion3/L6_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion3/L6_Tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>Ours (L6)</strong></p></div>
-
-      <div class="column is-12"><hr><h3 class="title is-5">OOD Motion 4 (Failure Case)</h3></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion4_all_fail/ood_motion4.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion4_all_fail/ood_motion4.mp4" type="video/mp4"></video><p>Reference</p></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion4_all_fail/PHC_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion4_all_fail/PHC_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">PHC Tracker (Fail)</p></div>
-      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion4_all_fail/L6_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion4_all_fail/L6_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">Ours L6 (Fail)</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">3. Synthesized Motions Across 5 Professional Domains</h2>
-    <p class="has-text-centered" style="margin-bottom: 20px;">Showcasing the diversity of our generated high-quality action semantics.</p>
-
-    <h3 class="title is-5">Motion Sample Set 1</h3>
+    <h2 class="title is-3 has-text-centered">Zero-Shot Real-World Execution Results</h2>
+    <p class="has-text-centered" style="margin-bottom: 30px;">Qualitative comparison on diverse spatially-sensitive tasks: Ball Kicking, Box Hugging, Bag Punching, and Sofa Sitting.</p>
+    
+    <h3 class="title is-4 has-text-centered">Task: Ball Kicking</h3>
     <div class="columns is-centered has-text-centered">
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/combat.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/combat.mp4" type="video/mp4"></video><p>Combat</p></div>
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/dance.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/dance.mp4" type="video/mp4"></video><p>Dance</p></div>
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/gymnastics.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/gymnastics.mp4" type="video/mp4"></video><p>Gymnastics</p></div>
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/martial.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/martial.mp4" type="video/mp4"></video><p>Martial Arts</p></div>
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/sports.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/sports.mp4" type="video/mp4"></video><p>Sports</p></div>
-    </div>
-
-    <h3 class="title is-5" style="margin-top: 20px;">Motion Sample Set 2</h3>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/combat.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/combat.mp4" type="video/mp4"></video><p>Combat</p></div>
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/dance.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/dance.mp4" type="video/mp4"></video><p>Dance</p></div>
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/gymnastics.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/gymnastics.mp4" type="video/mp4"></video><p>Gymnastics</p></div>
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/martial.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/martial.mp4" type="video/mp4"></video><p>Martial Arts</p></div>
-      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/sports.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/sports.mp4" type="video/mp4"></video><p>Sports</p></div>
-    </div>
-  </div>
-</section>
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Dynamic Complexity Evolution</h2>
-
-        <h3 class="title is-4">Mastering Extreme OOD Maneuvers</h3>
-        <div class="content has-text-justified">
-          <p>
-            Our iterative curriculum significantly pushes the boundary of humanoid capability. For instance, the initial L0 tracker collapses on high-acceleration maneuvers, while the evolved L6 tracker maintains stable air-control and successful landing even on the frontier "Acrobatic Side Flip".
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <img src="./static/images/comparison.png" alt="Qualitative comparison on extreme OOD maneuvers">
-        </div>
-
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/ball/ball_gvhrm.mp4" type="video/mp4">
+        </video>
+        <p>GVHMR (Human)</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/ball/ball_gmr.MOV" type="video/mp4">
+        </video>
+        <p class="has-text-danger">Baseline</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/ball/ball_sd.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-warning">Seedance</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/ball/ball_dream.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-success"><strong>Dream2Act (Ours)</strong></p>
       </div>
     </div>
+    <hr>
+
+    <h3 class="title is-4 has-text-centered">Task: Box Hugging</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/box/box_human.mp4" type="video/mp4">
+        </video>
+        <p>GVHMR (Human)</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/box/box_gmr.MOV" type="video/mp4">
+        </video>
+        <p class="has-text-danger">Baseline</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/box/box_sd.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-warning">Seedance</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/box/box_dream.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-success"><strong>Dream2Act (Ours)</strong></p>
+      </div>
+    </div>
+    <hr>
+
+    <h3 class="title is-4 has-text-centered">Task: Bag Punching</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/fighting/fight_human.mp4" type="video/mp4">
+        </video>
+        <p>GVHMR (Human)</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/fighting/fight_gmr.MOV" type="video/mp4">
+        </video>
+        <p class="has-text-danger">Baseline</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/fighting/fight_sd.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-warning">Seedance</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/fighting/fight_dream_new.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-success"><strong>Dream2Act (Ours)</strong></p>
+      </div>
+    </div>
+    <hr>
+
+    <h3 class="title is-4 has-text-centered">Task: Sofa Sitting</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/siting/sit_human.mp4" type="video/mp4">
+        </video>
+        <p>GVHMR (Human)</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/siting/sit_gmr.MOV" type="video/mp4">
+        </video>
+        <p class="has-text-danger">Baseline</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/siting/sit_sd.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-warning">Seedance</p>
+      </div>
+      <div class="column is-one-quarter">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/siting/sit_dream.MOV" type="video/mp4">
+        </video>
+        <p class="has-text-success"><strong>Dream2Act (Ours)</strong></p>
+      </div>
+    </div>
+
   </div>
-</section> -->
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{xu2026iterativeclosedloopmotionsynthesis,
-      title={Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control}, 
-      author={Weisheng Xu and Qiwei Wu and Jiaxi Zhang and Tan Jing and Yangfan Li and Yuetong Fang and Jiaqi Xiong and Kai Wu and Rong Ou and Renjing Xu},
+    <pre><code>@article{xu2026dream2act,
+      title={Dream2Act: Morphology-Consistent Humanoid Interaction through Robot-Centric Video Synthesis}, 
+      author={Weisheng Xu and Jian Li and Shuyi Lin and Mingqian Zhou and Taowen Wang and Jiawen Wen and Yi Gu and Bin Yang and Haodong Chen and Jing Tan and Qiwei Wu and Xiangrui Jiang and Qiwei Liang and Jiaxi Zhang and Renjing Xu},
       year={2026},
-      eprint={2602.21599},
+      eprint={2603.19709},
       archivePrefix={arXiv},
       primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2602.21599}, 
+      url={https://arxiv.org/abs/2603.19709}, 
 }</code></pre>
   </div>
 </section>
@@ -323,25 +298,18 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/pdfs/CVPR26_CLAIMS.pdf">
+      <a class="icon-link" href="https://arxiv.org/pdf/2603.19709v1">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <!-- <a class="icon-link" href="https://github.com/WesleyXu224" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a> -->
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            Source code is borrowed from <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We thank the authors for their excellent template.
+            Source code is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We thank the authors for their excellent template.
           </p>
         </div>
       </div>
