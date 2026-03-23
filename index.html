@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="CLAIMS: Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control.">
+  <meta name="keywords" content="CLAIMS, Humanoid Control, Motion Synthesis, Reinforcement Learning, CVPR 2026">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CLAIMS: Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-weight=%22bold%22 font-family=%22Arial,sans-serif%22 fill=%22%23363636%22>C</text></svg>">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://wesleyxu224.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control</h1>
+          
+          <div class="is-size-4 publication-authors" style="margin-bottom: 10px;">
+            <span class="author-block">CVPR 2026</span>
+          </div>
+
+<div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://wesleyxu224.github.io">Weisheng Xu</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://nathanwu7.github.io/">Qiwei Wu</a><sup>1*</sup>,
+            </span>
+            <span class="author-block">
+              Jiaxi Zhang<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://colin-jing.github.io/">Jing Tan</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Yangfan Li<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Yuetong Fang<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Jiaqi Xiong<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Kai Wu<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Rong Ou<sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Renjing Xu<sup>1&dagger;</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Hong Kong University of Science and Technology (Guangzhou),</span>
+            <span class="author-block"><sup>2</sup>University of Oxford</span>
+          </div>
+          
+          <div class="is-size-6 publication-authors" style="margin-top: 5px; font-style: italic;">
+            <span class="author-block"><sup>*</sup>Equal Contribution,</span>
+            <span class="author-block"><sup>&dagger;</sup>Corresponding Author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="./static/pdfs/CVPR26_CLAIMS.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="./static/pdfs/CVPR26_CLAIMS_Supplementary.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supp</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2602.21599"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video (Coming Soon)</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/pipeline.png" alt="CLAIMS Pipeline" style="width:100%;">
+      <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
+        <span class="dnerf">CLAIMS</span> is a closed-loop automated framework that co-evolves motion data synthesis and controllers, scaling the capabilities of physics-based humanoid control.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Physics-based humanoid control relies on training with motion datasets that have diverse data distributions. However, the fixed difficulty distribution of datasets limits the performance ceiling of the trained control policies. Additionally, the method of acquiring high-quality data through professional motion capture systems is constrained by costs, making it difficult to achieve large-scale scalability.
+          </p>
+          <p>
+            To address these issues, we propose a closed-loop automated motion data generation and iterative framework, <strong>CLAIMS</strong>. It can generate high-quality motion data with rich action semantics, including martial arts, dance, combat, sports, gymnastics, and more.
+          </p>
+          <p>
+            Furthermore, our framework enables difficulty iteration of policies and data through physical metrics and objective evaluations, allowing the trained tracker to break through its original difficulty limits. On the PHC single-primitive tracker, using only approximately 1/10 of the AMASS dataset size, the average failure rate on the test set (2201 clips) is reduced by 45% compared to the baseline.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">1. Evolution of Tracking Capability on Dynamic Kicks</h2>
+    <p class="has-text-centered" style="margin-bottom: 20px;">Comparing tracking performance of different training loops (L0, L3, L6) across escalating difficulty levels.</p>
+    
+    <h3 class="title is-5">Difficulty Level: L0 Kick</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L0_kick/L0_kick.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L0_kick/L0_kick.mp4" type="video/mp4"></video><p>Reference Motion</p></div>
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L0_kick/L0_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L0_kick/L0_tracker.mp4" type="video/mp4"></video><p class="has-text-danger">L0 Tracker</p></div>
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L0_kick/L3_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L0_kick/L3_tracker.mp4" type="video/mp4"></video><p class="has-text-warning">L3 Tracker</p></div>
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L0_kick/L6_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L0_kick/L6_tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>L6 Tracker (Ours)</strong></p></div>
+    </div>
+
+    <h3 class="title is-5">Difficulty Level: L3 Kick</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L3_kick/L3_kick.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L3_kick/L3_kick.mp4" type="video/mp4"></video><p>Reference Motion</p></div>
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L3_kick/L0_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L3_kick/L0_tracker.mp4" type="video/mp4"></video><p class="has-text-danger">L0 Tracker</p></div>
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L3_kick/L3_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L3_kick/L3_tracker.mp4" type="video/mp4"></video><p class="has-text-warning">L3 Tracker</p></div>
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L3_kick/L6_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L3_kick/L6_tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>L6 Tracker (Ours)</strong></p></div>
+    </div>
+
+    <h3 class="title is-5">Difficulty Level: L6 Kick</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L6_kick/L6_kick.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L6_kick/L6_kick.mp4" type="video/mp4"></video><p>Reference Motion</p></div>
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L6_kick/L0_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L6_kick/L0_tracker.mp4" type="video/mp4"></video><p class="has-text-danger">L0 Tracker</p></div>
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L6_kick/L3_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L6_kick/L3_tracker.mp4" type="video/mp4"></video><p class="has-text-warning">L3 Tracker</p></div>
+      <div class="column is-one-quarter"><video preload="none" poster="./static/videos/L6_kick/L6_tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/L6_kick/L6_tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>L6 Tracker (Ours)</strong></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section has-background-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">2. Generalization to Extreme OOD Maneuvers</h2>
+    <p class="has-text-centered" style="margin-bottom: 20px;">Comparing our final L6 Tracker with the PHC baseline on out-of-distribution dynamic motions.</p>
+
+    <div class="columns is-multiline is-centered has-text-centered">
+      <div class="column is-12"><h3 class="title is-5">OOD Motion 1</h3></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion1/ood_motion1.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion1/ood_motion1.mp4" type="video/mp4"></video><p>Reference</p></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion1/PHC_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion1/PHC_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">PHC Tracker</p></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion1/L6_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion1/L6_Tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>Ours (L6)</strong></p></div>
+
+      <div class="column is-12"><hr><h3 class="title is-5">OOD Motion 2</h3></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion2/ood_motion2.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion2/ood_motion2.mp4" type="video/mp4"></video><p>Reference</p></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion2/PHC_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion2/PHC_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">PHC Tracker</p></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion2/L6_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion2/L6_Tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>Ours (L6)</strong></p></div>
+
+      <div class="column is-12"><hr><h3 class="title is-5">OOD Motion 3</h3></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion3/ood_motion3.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion3/ood_motion3.mp4" type="video/mp4"></video><p>Reference</p></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion3/PHC_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion3/PHC_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">PHC Tracker</p></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion3/L6_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion3/L6_Tracker.mp4" type="video/mp4"></video><p class="has-text-success"><strong>Ours (L6)</strong></p></div>
+
+      <div class="column is-12"><hr><h3 class="title is-5">OOD Motion 4 (Failure Case)</h3></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion4_all_fail/ood_motion4.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion4_all_fail/ood_motion4.mp4" type="video/mp4"></video><p>Reference</p></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion4_all_fail/PHC_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion4_all_fail/PHC_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">PHC Tracker (Fail)</p></div>
+      <div class="column is-one-third"><video preload="none" poster="./static/videos/OOD_motion4_all_fail/L6_Tracker.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/OOD_motion4_all_fail/L6_Tracker.mp4" type="video/mp4"></video><p class="has-text-danger">Ours L6 (Fail)</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">3. Synthesized Motions Across 5 Professional Domains</h2>
+    <p class="has-text-centered" style="margin-bottom: 20px;">Showcasing the diversity of our generated high-quality action semantics.</p>
+
+    <h3 class="title is-5">Motion Sample Set 1</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/combat.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/combat.mp4" type="video/mp4"></video><p>Combat</p></div>
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/dance.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/dance.mp4" type="video/mp4"></video><p>Dance</p></div>
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/gymnastics.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/gymnastics.mp4" type="video/mp4"></video><p>Gymnastics</p></div>
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/martial.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/martial.mp4" type="video/mp4"></video><p>Martial Arts</p></div>
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample1/sports.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample1/sports.mp4" type="video/mp4"></video><p>Sports</p></div>
+    </div>
+
+    <h3 class="title is-5" style="margin-top: 20px;">Motion Sample Set 2</h3>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/combat.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/combat.mp4" type="video/mp4"></video><p>Combat</p></div>
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/dance.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/dance.mp4" type="video/mp4"></video><p>Dance</p></div>
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/gymnastics.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/gymnastics.mp4" type="video/mp4"></video><p>Gymnastics</p></div>
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/martial.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/martial.mp4" type="video/mp4"></video><p>Martial Arts</p></div>
+      <div class="column is-one-fifth"><video preload="none" poster="./static/videos/5Kinds_sample2/sports.jpg" controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()"><source src="./static/videos/5Kinds_sample2/sports.mp4" type="video/mp4"></video><p>Sports</p></div>
+    </div>
+  </div>
+</section>
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Dynamic Complexity Evolution</h2>
+
+        <h3 class="title is-4">Mastering Extreme OOD Maneuvers</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our iterative curriculum significantly pushes the boundary of humanoid capability. For instance, the initial L0 tracker collapses on high-acceleration maneuvers, while the evolved L6 tracker maintains stable air-control and successful landing even on the frontier "Acrobatic Side Flip".
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/comparison.png" alt="Qualitative comparison on extreme OOD maneuvers">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{xu2026iterativeclosedloopmotionsynthesis,
+      title={Iterative Closed-Loop Motion Synthesis for Scaling the Capabilities of Humanoid Control}, 
+      author={Weisheng Xu and Qiwei Wu and Jiaxi Zhang and Tan Jing and Yangfan Li and Yuetong Fang and Jiaqi Xiong and Kai Wu and Rong Ou and Renjing Xu},
+      year={2026},
+      eprint={2602.21599},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2602.21599}, 
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/pdfs/CVPR26_CLAIMS.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <!-- <a class="icon-link" href="https://github.com/WesleyXu224" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a> -->
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Source code is borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. We thank the authors for their excellent template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
