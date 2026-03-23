@@ -158,7 +158,7 @@
   </div>
 </section>
 
-<section class="section has-background-light">
+<!-- <section class="section has-background-light">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Zero-Shot Real-World Execution Results</h2>
     <p class="has-text-centered" style="margin-bottom: 30px;">Qualitative comparison on diverse spatially-sensitive tasks: Ball Kicking, Box Hugging, Bag Punching, and Sofa Sitting.</p>
@@ -279,8 +279,129 @@
     </div>
 
   </div>
-</section>
+</section> -->
+<section class="section has-background-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Zero-Shot Real-World Execution Results</h2>
+    <p class="has-text-centered" style="margin-bottom: 30px;">Qualitative comparison on diverse spatially-sensitive tasks: Ball Kicking, Box Hugging, Bag Punching, and Sofa Sitting.</p>
+    
+    <h3 class="title is-4 has-text-centered">Task: Ball Kicking</h3>
+    <div class="columns is-multiline is-centered has-text-centered">
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/ball/ball_gvhrm.mp4" type="video/mp4">
+        </video>
+        <p>GVHMR (Human)</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/ball/ball_gmr.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-danger">Baseline</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/ball/ball_sd.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-warning">Seedance</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/ball/ball_dream.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-success"><strong>Dream2Act (Ours)</strong></p>
+      </div>
+    </div>
+    <hr>
 
+    <h3 class="title is-4 has-text-centered">Task: Box Hugging</h3>
+    <div class="columns is-multiline is-centered has-text-centered">
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/box/box_human.mp4" type="video/mp4">
+        </video>
+        <p>GVHMR (Human)</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/box/box_gmr.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-danger">Baseline</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/box/box_sd.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-warning">Seedance</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/box/box_dream.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-success"><strong>Dream2Act (Ours)</strong></p>
+      </div>
+    </div>
+    <hr>
+
+    <h3 class="title is-4 has-text-centered">Task: Bag Punching</h3>
+    <div class="columns is-multiline is-centered has-text-centered">
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/fighting/fight_human.mp4" type="video/mp4">
+        </video>
+        <p>GVHMR (Human)</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/fighting/fight_gmr.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-danger">Baseline</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/fighting/fight_sd.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-warning">Seedance</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/fighting/fight_dream_new.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-success"><strong>Dream2Act (Ours)</strong></p>
+      </div>
+    </div>
+    <hr>
+
+    <h3 class="title is-4 has-text-centered">Task: Sofa Sitting</h3>
+    <div class="columns is-multiline is-centered has-text-centered">
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/siting/sit_human.mp4" type="video/mp4">
+        </video>
+        <p>GVHMR (Human)</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/siting/sit_gmr.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-danger">Baseline</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/siting/sit_sd.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-warning">Seedance</p>
+      </div>
+      <div class="column is-half">
+        <video controls muted loop playsinline width="100%" onmouseover="this.play()" onmouseout="this.pause()">
+          <source src="./static/videos/siting/sit_dream.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-success"><strong>Dream2Act (Ours)</strong></p>
+      </div>
+    </div>
+
+  </div>
+</section>
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
